@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dan Fachin — Let's Connect!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #FDF6EC;
+      --sage: #7A9E7E;
+      --sage-dark: #5C7E60;
+      --terra: #C67B5C;
+      --terra-dark: #A8604A;
+      --charcoal: #2D2D2D;
+      --warm-gray: #6B6560;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--cream);
+      color: var(--charcoal);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      animation: fadeUp 0.6s ease-out;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .emoji-header {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--charcoal);
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: var(--warm-gray);
+      margin-bottom: 1.5rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--warm-gray);
+      margin-bottom: 2rem;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: block;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-primary {
+      background-color: var(--sage);
+      color: white;
+      box-shadow: 0 2px 8px rgba(122, 158, 126, 0.3);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--sage-dark);
+      box-shadow: 0 4px 12px rgba(122, 158, 126, 0.4);
+    }
+
+    .btn-secondary {
+      background-color: var(--terra);
+      color: white;
+      box-shadow: 0 2px 8px rgba(198, 123, 92, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--terra-dark);
+      box-shadow: 0 4px 12px rgba(198, 123, 92, 0.4);
+    }
+
+    /* Future: Uncomment when Google Calendar booking is ready
+    .btn-booking {
+      background-color: transparent;
+      color: var(--sage);
+      border: 2px solid var(--sage);
+    }
+
+    .btn-booking:hover {
+      background-color: var(--sage);
+      color: white;
+    }
+    */
+
+    .location {
+      font-size: 0.9rem;
+      color: var(--warm-gray);
+    }
+
+    .location-icon {
+      margin-right: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji-header">👋</div>
+    <h1>Dan Fachin</h1>
+    <p class="subtitle">Caia & Jamie's Dad</p>
+    <p class="intro">
+      Great to meet you! I'd love to set up a playdate.
+      Tap below to text or email me — whichever's easier for you.
+    </p>
+    <div class="cta-group">
+      <a href="sms:+16137954232" class="btn btn-primary">📱 Text Me</a>
+      <a href="mailto:danfachin@gmail.com?subject=Playdate%20—%20Let's%20Connect!" class="btn btn-secondary">📧 Email Me</a>
+      <!-- Future: Uncomment when Google Calendar appointment slots are configured
+      <a href="YOUR_LINK" class="btn btn-booking">📅 Book a Playdate</a>
+      -->
+    </div>
+    <p class="location"><span class="location-icon">📍</span>Richmond, ON</p>
+  </div>
+</body>
+</html>
