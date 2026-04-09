@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code — danfachin.github.io/connect</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #FDF6EC;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      gap: 1.5rem;
+    }
+    h1 { font-size: 1.1rem; color: #2D2D2D; margin: 0; }
+    .url { font-size: 0.9rem; color: #6B6560; }
+    img { border: 6px solid white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    a.download {
+      background: #7A9E7E;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    a.download:hover { background: #5C7E60; }
+  </style>
+</head>
+<body>
+  <h1>Playdate Connect Card — QR Code</h1>
+  <p class="url">https://danfachin.github.io/connect</p>
+  <img id="qr"
+    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://danfachin.github.io/connect&color=2D2D2D&bgcolor=FDF6EC&margin=10"
+    width="300" height="300"
+    alt="QR code for danfachin.github.io/connect">
+  <a class="download" href="https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=https://danfachin.github.io/connect&color=2D2D2D&bgcolor=FDF6EC&margin=20&format=png" download="playdate-connect-qr.png">
+    Download PNG (600×600)
+  </a>
+</body>
+</html>
