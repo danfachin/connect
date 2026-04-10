@@ -1,0 +1,15 @@
+# Claude Code workspace
+.claude/settings.local.json
+.claude/wip-state/
+.claude/wip-ack/
+.claude/plans/
+.claude/worktrees/
+
+# Environment
+.env
+
+# Node
+node_modules/
+
+# macOS
+.DS_Store
